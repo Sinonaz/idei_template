@@ -61,7 +61,8 @@ const styles = () => {
     .pipe(postcss([autoprefixer()]))
     .pipe(csso())
     .pipe(rename(`style.min.css`))
-    .pipe(gulp.dest(`.${BUILD_PATH}/css`, {sourcemaps: `.`}));
+    .pipe(gulp.dest(`.${BUILD_PATH}css`, {sourcemaps: `.`}))
+    .pipe(browserSync.stream());
 };
 exports.styles = styles;
 
