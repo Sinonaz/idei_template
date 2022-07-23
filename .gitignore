@@ -1,0 +1,10 @@
+!.gitignore
+/runtime
+/node_modules
+.cache
+.config
+.local
+.bash_history
+.idea
+assets
+package-lock.json

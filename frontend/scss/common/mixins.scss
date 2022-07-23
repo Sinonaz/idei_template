@@ -1,0 +1,38 @@
+// псевдоэлемент
+@mixin pseudo {
+  content: "";
+  position: absolute;
+}
+
+// кнопка
+@mixin btn {
+  display: inline-block;
+  padding: 5px 26px;
+  font-size: 19px;
+  line-height: 30px;
+  color: $c-black;
+  text-decoration: none;
+  border: 1px solid $c-black;
+}
+
+@mixin list-none {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin btn-reset {
+  padding: 0;
+  color: $c-black;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin link {
+  color: $c-link;
+}
+
+@mixin heading {
+  margin: 0;
+  padding: 0;
+}

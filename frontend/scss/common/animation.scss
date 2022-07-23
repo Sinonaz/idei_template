@@ -1,0 +1,70 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.is-video-appear {
+  animation: appear 2s ease-in-out;
+}
+
+.is-review-appear {
+  animation: appear 0.7s ease-in-out;
+}
+
+.is-appear {
+  animation: appear 0.7s ease-in-out;
+}
+
+@keyframes next-slide {
+  1% {
+    transform: translateX(1px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(300px);
+    opacity: 1;
+  }
+}
+
+@keyframes prev-slide {
+  0% {
+    transform: translateX(300px);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(1px);
+    opacity: 0;
+  }
+}
+
+.media-hover-animation {
+  filter: saturate(110%) brightness(103%);
+  transition: filter 0.2s ease;
+}
+
+// preloader
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.block-rotate {
+  animation: rotate-animation 3s linear;
+  animation-iteration-count: infinite;
+}
