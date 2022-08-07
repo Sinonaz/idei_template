@@ -4,17 +4,6 @@
   position: absolute;
 }
 
-// кнопка
-@mixin btn {
-  display: inline-block;
-  padding: 5px 26px;
-  font-size: 19px;
-  line-height: 30px;
-  color: $c-black;
-  text-decoration: none;
-  border: 1px solid $c-black;
-}
-
 @mixin list-none {
   margin: 0;
   padding: 0;
@@ -35,4 +24,12 @@
 @mixin heading {
   margin: 0;
   padding: 0;
+}
+
+@mixin webkit-box($countLine) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $countLine;
+  overflow: hidden;
+  word-break: break-all;
 }

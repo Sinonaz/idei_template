@@ -21,6 +21,7 @@ body {
 body {
   position: relative;
   min-width: 320px;
+  margin: 0;
   font-weight: 300;
   font-size: 17px;
   line-height: 1.3;
@@ -42,31 +43,8 @@ img {
   height: auto;
 }
 
-input {
-  margin: 0;
-  padding: 0;
-  font-family: $main-font;
-  border: none;
-}
-
 textarea {
-  border: 0;
   resize: none;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  margin: 0;
-  appearance: none;
-}
-
-input[type="number"] {
-  appearance: textfield;
-}
-
-input[type="number"]:hover,
-input[type="number"]:focus {
-  appearance: number-input;
 }
 
 .rouble {
