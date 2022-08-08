@@ -1,4 +1,4 @@
-const isProduction = false;
+const isProduction = true;
 
 module.exports = {
   mode: isProduction ? "production" : "development",
