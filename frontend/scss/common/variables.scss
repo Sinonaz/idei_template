@@ -71,190 +71,25 @@ $tab-min-width: ($mobile-max-width + 1);
 
 // Элементы
 
-$standart-card-width: 255px; //в макете было 260px;
-$tab-card-width: 245px; //245-240
-
 // Цвета
 
 $c-black: #000000;
 $c-white: #ffffff;
 
-$c-mobile-nav-btn: #000000;
-$c-text: #000000;
-$c-error-text: #cc0000;
+// red
 
-// Красный
+// green
 
-$c-burning-task: #ff8787;
-$bg-priority-red: #ff5656;
-$c-burning-line: #ff8787;
-$c-burn-button-text: #F44545;
-$c-burn-button-line: #ff8787;
-$c-error: #FF8787;
-$c-error-text: #F44545;
+// yellow
 
-// Зеленый
+// blue
 
-$c-menu: #32da8d;
-$c-menu-acive: #55ffb1;
-$bg-priority-green: #a0e59a;
-$c-timer: #3bce9a;
-$c-add: #3bce9a;
-$c-checkbox-checked: #4CD7A6;
-$c-button-submit: #3BCE9A;
-$bg-login-button: #85D7BA;
+// gray
 
-// Желтые
-
-$c-yellow-link: #f9c100;
-$c-yellow-link-active: #ffff33;
-$bg-priority-orange: #ffb156;
-$c-star: #f9c950;
-$c-sort-active-project: #EAEC93;
-$c-projects-date-img: #EADFA6;
-$c-favourites-title: #B08A28;
-
-// Голубые
-
-$c-blue-link: #0ad4f2;
-$c-blue-link-active: #cbf8ff;
-$c-current-task: #91d6ec;
-$bg-priority-blue: #9bd8e5;
-$bg-projects: #f9fafc;
-$bg-avatar: #c9e2ec;
-$c-current-line: #91d6ec;
-$c-blue-button-text: #33A0C3;
-$c-blue-button-line: #91D6EC;
-$bg-time-total: #DFF7FF;
-$c-folder-blue: #58B1F2;
-$bg-button-blue: #A0DBEE;
-
-// Серые
-
-$c-completed-task: #c8c8c8;
-$c-priority-gray: #cdcdcd;
-$c-task-line: #dedede;
-$bg-priority-gray: #eeeeee;
-$c-task-projects: #bfbfbf;
-$c-projects-line: #eaeaea;
-$c-nav-text: #585858;
-$c-search: #f4f4f4;
-$c-search-button: #c8c8c8;
-$c-completed-line: #c8c8c8;
-$c-checkbox-border: #9C9C9C;
-$bg-competed: #E8ECEF;
-$bg-subitem: #F9FAFB;
-$c-giver: #BFBFBF;
-$bg-button--task: #F3F3F3;
-$c-border-one-task: #F0F0F0;
-$c-staff-desc: #969696;
-$c-comments-date: #838383;
-$c-play: #BFBFBF;
-$bg-close-button: #F5F5F5;
-$bg-close-button-x: #a5a5a5;
-$bg-modal-list: #F0F3F7;
-$c-modal-time: #9A9A9A;
-$bg-pencil: #f1f1f1;
-$c-back-button: #b5b5b5;
-$c-create-placeholder: #aaaaaa;
-$c-workers-choise: #F9FAFC;
-$c-projects-line: #D6E8E6;
-$c-arhcive: #dfdfdf;
-$bg-archive-project: #F9FAFB;
-$c-header-text: #454545;
-$c-arrow-select: #CBCBCB;
-$bg-cancel-button: #f4f4f4;
-$c-breadcrumbs: #828282;
-$c-trash-icon: #e3e3e3;
-$c-task-closed: #F9FAFB;
-$c-task-closed-line: #BFBFBF;
-$c-collapse-bg: #dfe8e7;
-$c-devider: #ececec;
-
-// Фиолетовые
-
-$c-blue-button-line: #D5CCEE;
-$c-subtask: #F6EAFF;
-$c-subtask-line: #D9B9F2;
-$c-link: #7356C7;
-$c-scroll-thumb: #D5CCEE;
-$c-timer-clock: #9583CB;
-$c-worked-line: #9683CB;
-
+// purple
 
 // ACTIVITY EFFECTS
 
-$c-red-button-hover: #f44545;
-$c-red-button-active: #ff7575;
-$c-task-day-red-hover: #ffe7e7;
-$c-task-day-red-text: #f44545;
-$c-task-day-red-active: #ffd3d3;
-$c-task-day-blue-hover: #e1f6fd;
-$c-task-day-blue-text: #33a0c3;
-$c-task-day-blue-active: #cbf2ff;
-$c-blue-button-hover: #33a0c3;
-$c-blue-button-active: #43B5da;
-$c-task-item-hover: #f9f5ff;
-$c-task-item-active: #f3ebff;
-$c-task-name-hover: #7356c7;
-$bg-button-hover: #f9f5ff;
-$bg-button-active: #f3ebff;
-$c-nav-border-active: #d5ccee;
-$c-timer-paused: #9683cb;
-$c-timer-hover: #52dead;
-$c-timer-paused-hover: #a692df;
-$c-search-button-hover: #d3cae1;
-$bg-task--project-hover: #FBFCFD;
-$bg-task--project--subtask-hover: #F9FAFC;
-$bg-task--project--done-hover: #E5EAED;
-$bg-task-name-done-hover: #d7d7e8;
-$bg-sort-button-hover: #FAFBFC;
-$c-indigo-hover: #7356C7;
-$c-comment-button-hover: #F6F6F6;
-$c-done-subtask: #E8ECEF;
-$bg-login: #F9FAFC;
-$c-archive-hover: #9D9F3E;
-$bg-create-button-hover: #3DDDA5;
-$bg-create-button-active: #85EAC6;
-$bg-priority-blue-hover: #A7E7F4;
-$bg-priority-green-hover: #AAEFA4;
-$bg-priority-gray-hover: #F5F5F5;
-$bg-priority-orange-hover: #FFC656;
-$bg-priority-red-hover: #FF6969;
-$bg-delete-button: #ffa5a5;
-$c-timer-time-hover: #7E6BB7;
-$c-timer-activated: #BAAEDD;
-$c-timer-activated-hover: #9683CB;
-$c-design-sort: #6F6FE8;
-$c-dev-sort: #EB6329;
-$c-seo-sort: #88AE38;
-$c-manage-sort: #83999F;
-
-$c-priority-1: #eeeeee;
-$c-priority-1-hover: #E7E7E7;
-$c-priority-2: #9ABCDA;
-$c-priority-2-hover: #92B2CE;
-$c-priority-3: #7CC4D3;
-$c-priority-3-hover: #7ABDCB;
-$c-priority-4: #65BAAD;
-$c-priority-4-hover: #60AFA3;
-$c-priority-5: #B8CA02;
-$c-priority-5-hover: #B1C200;
-$c-priority-6: #FDCD00;
-$c-priority-6-hover: #F1C400;
-$c-priority-7: #FAA701;
-$c-priority-7-hover: #ED9F03;
-$c-priority-8: #FE7105;
-$c-priority-8-hover: #F06A03;
-$c-priority-9: #FD4C00;
-$c-priority-9-hover: #E24400;
-$c-priority-10: #F21301;
-$c-priority-10-hover: #DF1505;
-
-
-
 $default-transition-settings: 0.2s ease-in;
-$links-transition-settings: 0.3s ease-in-out;
-$header-transition-settings: 0.5s;
 
 $main-font: "NotoSans", Helvetica, Arial, sans-serif;
