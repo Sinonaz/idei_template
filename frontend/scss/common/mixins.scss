@@ -11,15 +11,6 @@
   list-style: none;
 }
 
-// сброс стилей кнопки
-@mixin btn-reset {
-  padding: 0;
-  color: $c-black;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 // Обрезка многострочного текста троеточием
 @mixin truncate-multistring($line-clamp, $word-break: break-word) {
   display: -webkit-box;
