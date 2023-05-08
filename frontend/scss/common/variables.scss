@@ -1,95 +1,19 @@
-/// Широкий формат (стили подключаются вместе с десктопными и перекрывают их) ///
+// BREAKPOINTS
+$laptop-max-width: 1500px; // Брейкпоинт для ноутбука
+$tab-max-width: 1280px; // Брейкпоинт для большого планшета
+$tab-mid-width: 1024px; // Брейкпоинт для малого планшета
+$mobile-max-width: 767px; // Брейкпоинт для смартфона
 
-// точка подключения широкого формата
-// (минимальная ширина)
-$wide-min-width: 1400px;
+// PADDINGS
+$container-desktop-padding: 30px; // Внутренний отступ для десктопа
+$container-tab-padding: 20px; // Внутренний отступ для планшета
+$container-mobile-padding: 10px; // Внутренний отступ для смартфона
 
-/// Десктопные стили ///
-
-// минимальная ширина контейнера в десктопном варианте
-$container-desktop-min-width: 0;
-
-// максимальная ширина контейнера в десктопном варианте
-$container-desktop-max-width: 1400px;
-
-// отступы контейнера в десктопном варианте
-$container-desktop-padding: 30px;
-
-// макс ширина body-wrapper на десктопе
-$body-wrapper-desktop-max-width: 100%;
-
-// паддинги враппера
-$body-wrapper-desktop-padding: 0;
-$body-wrapper-tab-padding: 0;
-$body-wrapper-mobile-padding: 0;
-
-// точка переключения с декстопного на планшетный вариант
-// (минимальная ширина десктопа)
-$desktop-min-width: 1200px;
-$desktop-max-width: $wide-min-width - 1;
-
-/// планшетные стили ///
-
-$tab-mid-width: 1023px;
-
-// минимальная ширина контейнера в планшетном варианте
-$container-tab-min-width: 0;
-
-// максимальная ширина контейнера в планшетном варианте
-$container-tab-max-width: 100%;
-
-// отступы контейнера в планшетном варианте
-$container-tab-padding: 20px;
-
-/// Мобильные стили ///
-
-// точка переключения с мобильного на планшетный вариант
-// (максимальная ширина мобильного)
-$mobile-max-width: 767px;
-
-// минимальная ширина контейнера в мобильном варианте
-$container-mobile-min-width: 0;
-
-// максимальная ширина контейнера в мобильном варианте
-$container-mobile-max-width: 440px;
-
-// отступы контейнера в мобильном варианте
-$container-mobile-padding: 10px;
-
-// макс ширина body-wrapper
-$body-wrapper-mobile-max-width: 100%;
-
-/// Вычисляемые стили ///
-
-// точка переключения c декстопного на планшетный вариант
-// (максимальная ширина планшета)
-$tab-max-width: ($desktop-min-width - 1);
-
-// точка переключения c мобильного на планшетный вариант
-// (минимальная ширина планшета)
-$tab-min-width: ($mobile-max-width + 1);
-
-// Элементы
-
-// Цвета
-
+// COLORS
 $c-black: #000000;
 $c-white: #ffffff;
 
-// red
-
-// green
-
-// yellow
-
-// blue
-
-// gray
-
-// purple
-
-// ACTIVITY EFFECTS
-
-$default-transition-settings: 0.2s ease-in;
-
+// FONTS
 $main-font: "NotoSans", Helvetica, Arial, sans-serif;
+
+// OTHERS
