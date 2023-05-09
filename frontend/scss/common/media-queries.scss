@@ -1,2 +1,116 @@
+// Пример использования
 
+/*
+.main {
+  background-color: white;
 
+  @include media(laptop) {
+    background-color: brown;
+  }
+
+  @include media(tablet) {
+    background-color: black;
+  }
+
+  @include media(tablet, mid) {
+    background-color: red;
+  }
+
+  @include media(mobile, mid) {
+    background: green;
+  }
+
+  @include media(tablet-min) {
+    &::hover {
+      color: white;
+    }
+  }
+}
+*/
+
+$media-stack: (
+    device: laptop,
+    type: general,
+    rule: "only screen and (max-width: #{$laptop-max-width})",
+  ),
+  (
+    device: laptop,
+    type: mid,
+    rule: "only screen and (max-width: #{$laptop-mid-width})",
+  ),
+  (
+    device: laptop,
+    type: min,
+    rule: "only screen and (max-width: #{$laptop-min-width})",
+  ),
+  (
+    device: laptop-min,
+    type: general,
+    rule: "only screen and (min-width: #{$tab-max-width})",
+  ),
+  (
+    device: laptop-min,
+    type: mid,
+    rule: "only screen and (min-width: #{$tab-mid-width})",
+  ),
+  (
+    device: laptop-min,
+    type: min,
+    rule: "only screen and (min-width: #{$tab-min-width})",
+  ),
+  (
+    device: tablet,
+    type: general,
+    rule: "only screen and (max-width: #{$tab-max-width})",
+  ),
+  (
+    device: tablet,
+    type: mid,
+    rule: "only screen and (max-width: #{$tab-mid-width})",
+  ),
+  (
+    device: tablet,
+    type: min,
+    rule: "only screen and (max-width: #{$tab-min-width})",
+  ),
+  (
+    device: tablet-min,
+    type: general,
+    rule: "only screen and (min-width: #{$tab-max-width})",
+  ),
+  (
+    device: tablet-min,
+    type: mid,
+    rule: "only screen and (min-width: #{$tab-mid-width})",
+  ),
+  (
+    device: tablet-min,
+    type: min,
+    rule: "only screen and (min-width: #{$tab-min-width})",
+  ),
+  (
+    device: mobile,
+    type: general,
+    rule: "only screen and (max-width: #{$mobile-max-width})",
+  ),
+  (
+    device: mobile,
+    type: mid,
+    rule: "only screen and (max-width: #{$mobile-mid-width})",
+  ),
+  (
+    device: custom,
+    type: screen,
+    rule: "only screen and",
+  );
+
+@mixin media($device, $type: general, $customRule: "") {
+  @each $media in $media-stack {
+    @if ($device == map-get($media, device) and $type == map-get($media, type)) {
+      $rule: map-get($media, rule);
+      @media #{$rule} #{$customRule} {
+        @content;
+      }
+    }
+  }
+}
