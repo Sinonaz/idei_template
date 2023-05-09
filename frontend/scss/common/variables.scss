@@ -1,8 +1,15 @@
 // BREAKPOINTS
-$laptop-max-width: 1500px; // Брейкпоинт для ноутбука
-$tab-max-width: 1280px; // Брейкпоинт для большого планшета
-$tab-mid-width: 1024px; // Брейкпоинт для малого планшета
-$mobile-max-width: 767px; // Брейкпоинт для смартфона
+$laptop-max-width: 1499px; // Брейкпоинт для ноутбука
+$laptop-mid-width: 1300px; // Брейкпоинт для среднего ноутбука
+$laptop-min-width: 1200px; // Минимальная ширина ноутбука
+
+$tab-max-width: 1199px; // Брейкпоинт для большого планшета
+$tab-mid-width: 1023px; // Брейкпоинт для малого планшета
+$tab-min-width: 768px // Минимальная планшетная ширина
+
+$mobile-max-width: 767px; // Начальный брейкпоинт для смартфона
+$mobile-mid-width: 415px; // Средний брейкпоинт для смартфона
+
 
 // PADDINGS
 $container-desktop-padding: 30px; // Внутренний отступ для десктопа
