@@ -1,0 +1,23 @@
+// класс для обозначения контейнера для секций
+.container {
+  width: 100%;
+  max-width: 1820px + $container-desktop-padding * 2;
+  margin: 0 auto;
+
+  @media (max-width: $desktop-max-width) {
+    padding-right: $container-desktop-padding;
+    padding-left: $container-desktop-padding;
+  }
+
+  @media (max-width: $tab-max-width) {
+    padding-right: $container-tab-padding;
+    padding-left: $container-tab-padding;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    min-width: 320px;
+    max-width: 100%;
+    padding-right: $container-mobile-padding;
+    padding-left: $container-mobile-padding;
+  }
+}
