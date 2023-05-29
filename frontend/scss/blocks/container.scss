@@ -4,17 +4,17 @@
   max-width: 1820px + $container-desktop-padding * 2;
   margin: 0 auto;
 
-  @media (max-width: $desktop-max-width) {
+  @include media(laptop) {
     padding-right: $container-desktop-padding;
     padding-left: $container-desktop-padding;
   }
 
-  @media (max-width: $tab-max-width) {
+  @include media(tablet) {
     padding-right: $container-tab-padding;
     padding-left: $container-tab-padding;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @include media(mobile) {
     min-width: 320px;
     max-width: 100%;
     padding-right: $container-mobile-padding;
