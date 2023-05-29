@@ -25,9 +25,10 @@
         global.scss               - глобальные стили
         variables.scss            - SCSS переменные (размеры, цвета)
         mixin.scss                - SCSS миксины
-        responsive.scss           - блок .container
+        media-queries.scss        - SCSS функция для медиа выражений
         animation.scss            - анимации
-      plugins/                  - папка со стилями для переопредедения стилей стилей плагинов
+        container.scss            - блок .container
+      plugins/                  - папка со стилями для переопределения стилей стилей плагинов
       style.scss                - подключение стилей
   .editorconfig               - настройки для редактора кода
   .gitignore                  - файлы/папки игнорируемые Git
