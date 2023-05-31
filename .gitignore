@@ -8,3 +8,9 @@
 .idea
 assets
 package-lock.json
+
+/build/.htaccess
+/build/robots.txt
+.htaccess
+.htpasswd
+robots.txt

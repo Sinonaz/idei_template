@@ -1,0 +1,9 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content__main {
+  flex-grow: 1;
+}

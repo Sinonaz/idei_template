@@ -4,32 +4,28 @@
   position: absolute;
 }
 
+// сброс стилей листинга
 @mixin list-none {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-@mixin btn-reset {
-  padding: 0;
-  color: $c-black;
-  background-color: transparent;
-  border: none;
-}
-
-@mixin link {
-  color: $c-link;
-}
-
-@mixin heading {
-  margin: 0;
-  padding: 0;
-}
-
-@mixin webkit-box($countLine) {
+// Обрезка многострочного текста троеточием
+@mixin truncate-multistring($line-clamp, $word-break: break-word) {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: $countLine;
+  -webkit-line-clamp: $line-clamp;
   overflow: hidden;
-  word-break: break-all;
+  word-break: $word-break;
+}
+
+// Обрезка текста троеточием
+@mixin truncate-string($max-width: 100%) {
+  display: block;
+  width: 100%;
+  max-width: $max-width;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

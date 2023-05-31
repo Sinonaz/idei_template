@@ -7,18 +7,6 @@
   }
 }
 
-.is-video-appear {
-  animation: appear 2s ease-in-out;
-}
-
-.is-review-appear {
-  animation: appear 0.7s ease-in-out;
-}
-
-.is-appear {
-  animation: appear 0.7s ease-in-out;
-}
-
 @keyframes next-slide {
   1% {
     transform: translateX(1px);
@@ -47,11 +35,6 @@
     transform: translateX(1px);
     opacity: 0;
   }
-}
-
-.media-hover-animation {
-  filter: saturate(110%) brightness(103%);
-  transition: filter 0.2s ease;
 }
 
 // preloader
