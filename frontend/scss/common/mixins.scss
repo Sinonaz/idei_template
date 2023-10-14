@@ -23,3 +23,18 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+// Примесь для использования наведений
+@mixin hf($visible: false) {
+  @if $visible {
+    &:hover,
+    &:focus-visible {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:focus {
+      @content;
+    }
+  }
+}
