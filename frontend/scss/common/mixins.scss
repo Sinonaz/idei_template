@@ -1,18 +1,12 @@
 // псевдоэлемент
-@mixin pseudo {
-  content: "";
-  position: absolute;
-}
-
-// сброс стилей листинга
-@mixin list-none {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@mixin pseudo($content: "", $pos: absolute, $display: block) {
+  content: $content;
+  position: $pos;
+  display: $display;
 }
 
 // Обрезка многострочного текста троеточием
-@mixin truncate-multistring($line-clamp, $word-break: break-word) {
+@mixin truncate-multiline($line-clamp, $word-break: break-word) {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line-clamp;
@@ -21,7 +15,7 @@
 }
 
 // Обрезка текста троеточием
-@mixin truncate-string($max-width: 100%) {
+@mixin truncate($max-width: 100%) {
   display: block;
   width: 100%;
   max-width: $max-width;
