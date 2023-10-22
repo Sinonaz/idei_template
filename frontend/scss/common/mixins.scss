@@ -45,7 +45,7 @@
     font-weight: $weight;
     font-family: quote($font-name);
     font-style: $style;
-    src: url("#{$path}.woff2") format("woff2"), url("#{$path}.woff") format("woff");
+    src: url("#{$path}.woff2") format("woff2");
     font-display: swap;
   }
 }
