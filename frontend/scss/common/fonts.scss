@@ -1,7 +1,1 @@
-@font-face {
-  font-weight: 400;
-  font-family: "NotoSans";
-  font-style: normal;
-  src: url("../fonts/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans-Regular.woff") format("woff");
-  font-display: swap;
-}
+@include font-face(NotoSans, "../fonts/NotoSans-Regular");

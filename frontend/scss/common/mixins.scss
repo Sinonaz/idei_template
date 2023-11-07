@@ -1,18 +1,12 @@
 // псевдоэлемент
-@mixin pseudo {
-  content: "";
-  position: absolute;
-}
-
-// сброс стилей листинга
-@mixin list-none {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@mixin pseudo($content: "", $pos: absolute, $display: block) {
+  content: $content;
+  position: $pos;
+  display: $display;
 }
 
 // Обрезка многострочного текста троеточием
-@mixin truncate-multistring($line-clamp, $word-break: break-word) {
+@mixin truncate-multiline($line-clamp, $word-break: break-word) {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line-clamp;
@@ -21,11 +15,37 @@
 }
 
 // Обрезка текста троеточием
-@mixin truncate-string($max-width: 100%) {
+@mixin truncate($max-width: 100%) {
   display: block;
   width: 100%;
   max-width: $max-width;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+// Примесь для использования наведений
+@mixin hf($visible: false) {
+  @if $visible {
+    &:hover,
+    &:focus-visible {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+// Подключение шрифта
+@mixin font-face($font-name, $path, $weight: 400, $style: normal) {
+  @font-face {
+    font-weight: $weight;
+    font-family: quote($font-name);
+    font-style: $style;
+    src: url("#{$path}.woff2") format("woff2");
+    font-display: swap;
+  }
 }

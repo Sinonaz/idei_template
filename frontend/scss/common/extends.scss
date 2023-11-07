@@ -6,3 +6,10 @@
   border: none;
   cursor: pointer;
 }
+
+// сброс стилей листинга
+%list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
